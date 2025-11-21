@@ -119,10 +119,10 @@ Victor:
 
 
 ## New Timeline Dates:
-November
+### November
 - Data integration (Victor/Elina)
 - Data analysis (Victor/Elina)
 - Creating automated end-to-end workflow (Elina)
 - Full data documentation (provenance, reproducibility/transparency, metadata, update requirements.txt) (Victor)
-December
+### December
 - Final checks and submission (Victor/Elina)

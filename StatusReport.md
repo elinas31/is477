@@ -24,22 +24,22 @@ The relationship between exoplanet discovery methods and their discovery year.
 
 # Data Lifecycle:
 How this project relates to the FAIR data lifecycle: Findable, Accessible, Interoperable, Reusable
-## Findable
+## Findable:
 - Using datasets with persistent identifiers such as DOIs
 - Maintaining clear filenames and folder structure in the Github repository
-## Accessible
+## Accessible:
 - Providing download links for each dataset
 - Including conditions such as attribution or licensing for use
-## Interoperable
+## Interoperable:
 - Storing processed data in a widely used scientific format such as CSV
 - Will include column descriptions and data types in metadata for final report
-## Reusable
+## Reusable:
 - Documenting software environment and necessary packages with requirements.txt
 - Including extensive documentation regarding each processing step (acquisition, cleaning, eventually integration, analysis, etc.)
 
 # Updated Datasets: 
 ## Dataset 1: NASA exoplanet archive
-Catalog of confirmed and candidate exoplanets with physical and orbital parameters such as . The confirmed planet data includes parameters or calculations that are combined from different references. References are given for each value in the metadata. Operated under Creative Commons license.
+Catalog of confirmed and candidate exoplanets with physical and orbital parameters. The confirmed planet data includes parameters or calculations that are combined from different references. References are given for each value in the metadata. Operated under Creative Commons license.
 (https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PSCompPars)
 
 ## (CHANGED) Dataset 2: ESA exoplanet catalog
@@ -57,20 +57,20 @@ We accessed this dataset by directly downloading the catalog as a CSV from the w
 
 To ensure that no data was altered during the acquisition process, we computed a SHA256 hash for the raw data of both datasets to enable integrity verification and support the reproducibility of our results. The code needed to create the hashes is located in the scripts folder as generating_hash.py. We will make code to compare the hashes in the final report.
 
-# Data Quality
-## NASA
+# Data Quality:
+## NASA:
 - Accuracy: Very accurate because all sources for the dataset are peer-reviewed and well documented. Values that are recomputed are chosen from the best available paper/source. 
 - Completeness: It only includes planets and their parameters when validated and published. They do not include parameters if formally confirmed.
 - Timeliness: Updated very frequently, as and when new publications are available. Data is thoroughly reviewed before adding, so there is some delay.
 - Consistency: Parameter definitions follow scientific standards, and it uses uniform units and metadata. Rich metadata also links each parameter to its reference source. 
 
-## ESA
+## ESA:
 - Accuracy: Relatively accurate because some sources can include preliminary measurements. Also includes some older parameters for legacy reasons. 
 - Completeness: It includes confirmed, unconfirmed and controversial exoplanets, as opposed to the only conformed exoplanets in the NASA dataset. It mentions the parameters for the above exoplanets so easy to remove or focus on. It thus has a broader coverage.
 - Timeliness: Updated very frequently, as and when new publications, including preprints are available. So the updates are faster but with a little less reliability.
 - Consistency: Not as strictly uniform with units and parameter names, since the sources and their respective definitions are different. 
 
-# Cleaning data
+# Cleaning data:
 Both datasets were cleaned using OpenRefine
 ## NASA dataset: 
 We cleaned the dataset in OpenRefine. The main cleaning done was removing null values for the planet equilibrium temperature column, pl_eqt. This was done by faceting by blank (null or empty string) for the pl_eqt column, selecting the rows that were True, then removing the matching rows. Turning the column into numerical data and looking at the spread, there were some large outliers. But researching the few outliers showed that they were indeed true values. For example, a planet with a temperature of 4000 K seemed too high, but researching it, we found out that it was the hottest discovered exoplanet, backed up by research. (https://en.wikipedia.org/wiki/KELT-9b). We thus decided to keep all the outliers. The rest of the columns did not have null values so no more cleaning was required. The cleaned dataset was then exported as nasa_exoplanet_cleaned.csv. The OpenRefine history is provided.
@@ -95,7 +95,7 @@ The ESA dataset has a Creative Commons Attribution 4.0 International license whi
 - Data modified by the users: cleaned thus far.
 - DOI / Reference: (https://doi.org/10.1051/0004-6361/201116713)
 
-# Reproducibility
+# Reproducibility:
 The packages used thus far in this project are listed in the system_info.txt file. This included general system information and the like. An updated version will be provided for the final version if required.
 
 # Update Timeline: 

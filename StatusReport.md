@@ -109,6 +109,15 @@ Victor:
 - Updated timeline, dataset, overview
 - Worked on status report formatting/structuring
 
+ Elina:
+- Data quality assessments
+- Acquisition of Nasa dataset (nasa_query.py)
+- Generating hashes for both datasets (generating_hash.py)
+- NASA dataset cleaning and documentation 
+- Creating the requirements file
+- Updated some parts of status report
+
+
 ## New Timeline Dates:
 November
 - Data integration (Victor/Elina)

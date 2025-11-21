@@ -23,7 +23,7 @@ The relationship between exoplanet discovery methods and their discovery year.
 - [ ] Metadata and data documentation (Module 15)
 
 # Data Lifecycle:
-	How this project relates to the FAIR data lifecycle: Findable, Accessible, Interoperable, Reusable
+How this project relates to the FAIR data lifecycle: Findable, Accessible, Interoperable, Reusable
 ## Findable
 - Using datasets with persistent identifiers such as DOIs
 - Maintaining clear filenames and folder structure in the Github repository
@@ -76,10 +76,10 @@ Both datasets were cleaned using OpenRefine
 We cleaned the dataset in OpenRefine. The main cleaning done was removing null values for the planet equilibrium temperature column, pl_eqt. This was done by faceting by blank (null or empty string) for the pl_eqt column, selecting the rows that were True, then removing the matching rows. Turning the column into numerical data and looking at the spread, there were some large outliers. But researching the few outliers showed that they were indeed true values. For example, a planet with a temperature of 4000 K seemed too high, but researching it, we found out that it was the hottest discovered exoplanet, backed up by research. (https://en.wikipedia.org/wiki/KELT-9b). We thus decided to keep all the outliers. The rest of the columns did not have null values so no more cleaning was required. The cleaned dataset was then exported as nasa_exoplanet_cleaned.csv. The OpenRefine history is provided.
 
 ## ESA dataset: 
-	We uploaded the dataset, esaexoplanets.csv, into OpenRefine and created a new project. Then we made a facet by blank (null or empty string) for the star effective temperature variable, star_teff. Since there weren’t many blanks in the dataset, we decided to remove the rows where there were blanks by selecting “True” in the facet, going to “All”, then “Edit Rows”, and finally “Remove matching rows”. This way the rows with blanks in the star_teff column were removed and the remaining rows all had values. Looking at the spread of star_teff values after transforming the column into numerical data, we weren’t too worried about outliers as star temperatures can vary drastically depending on the type, age, luminosity, etc. The range of temperatures present is realistic so we didn’t remove any apparent outliers. The cleaned dataset was then exported as esaexoplanet_cleaned.csv, and the OpenRefine Undo/Redo history extracted as esa_cleaning_history.json.
+We uploaded the dataset, esaexoplanets.csv, into OpenRefine and created a new project. Then we made a facet by blank (null or empty string) for the star effective temperature variable, star_teff. Since there weren’t many blanks in the dataset, we decided to remove the rows where there were blanks by selecting “True” in the facet, going to “All”, then “Edit Rows”, and finally “Remove matching rows”. This way the rows with blanks in the star_teff column were removed and the remaining rows all had values. Looking at the spread of star_teff values after transforming the column into numerical data, we weren’t too worried about outliers as star temperatures can vary drastically depending on the type, age, luminosity, etc. The range of temperatures present is realistic so we didn’t remove any apparent outliers. The cleaned dataset was then exported as esaexoplanet_cleaned.csv, and the OpenRefine Undo/Redo history extracted as esa_cleaning_history.json.
 
 # License Compliance: 
-	The NASA Exoplanet Archive datasets are public data provided by NASA and hosted by the California Institute of Technology / IPAC. The data can be freely used and shared for research and educational purposes, but users must provide proper acknowledgment and cite the archive (including the relevant DOI).
+The NASA Exoplanet Archive datasets are public data provided by NASA and hosted by the California Institute of Technology / IPAC. The data can be freely used and shared for research and educational purposes, but users must provide proper acknowledgment and cite the archive (including the relevant DOI).
 - Data source / Creator: NASA Exoplanet Archive (Planetary Systems Composite Parameters - PSCompPars)  
 - Copyright / Ownership: © 2025 NASA / California Institute of Technology / IPAC  
 - License / Terms of Use: Public data from NASA Exoplanet Archive, usage governed by archive policies.  
@@ -87,7 +87,7 @@ We cleaned the dataset in OpenRefine. The main cleaning done was removing null v
 - Data modified by the users: cleaned thus far.
 - DOI / Reference: (https://doi.org/10.26133/NEA13)
 
-	The ESA dataset has a Creative Commons Attribution 4.0 International license which means that we can share the data in any medium or format and that we can modify the data as long as appropriate credit is given and indicate how the data was changed or modified. (https://creativecommons.org/licenses/by/4.0/)
+The ESA dataset has a Creative Commons Attribution 4.0 International license which means that we can share the data in any medium or format and that we can modify the data as long as appropriate credit is given and indicate how the data was changed or modified. (https://creativecommons.org/licenses/by/4.0/)
 - Data source / Creator: exoplanet TEAM (Extrasolar Planets Encyclopaedia)
 - Copyright notice: © 1995-2025 Exoplanet TEAM / exoplanet.eu
 - License: Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)

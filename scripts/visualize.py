@@ -2,7 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-merged = pd.read_csv('data/merged_exoplanets.csv')
+merged = pd.read_csv("data/merged_exoplanets.csv")
+df_nasa = pd.read_csv("data/nasa/nasa_exoplanet_cleaned.csv")
 
 plt.figure(figsize = (10, 6))
 plt.scatter(merged["pl_eqt"], merged["st_teff"], s = 20)

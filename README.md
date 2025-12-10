@@ -140,7 +140,7 @@ NASA:
 - Copyright / Ownership: © 2025 NASA / California Institute of Technology / IPAC  
 - License / Terms of Use: Public data from NASA Exoplanet Archive, usage governed by archive policies.  
 - Disclaimer: The dataset is a composite table. Parameter values may be drawn from multiple literature sources, and some values are computed by the archive. Users should exercise judgment regarding reliability.  
-- Data modified by the users: cleaned thus far.
+- Data modified by the users: cleaned, integrated, and used for visualization.
 - DOI / Reference: (https://doi.org/10.3847/PSJ/ade3c2)
 
 ESA:
@@ -148,7 +148,7 @@ ESA:
 - Copyright notice: © 1995-2025 Exoplanet TEAM / exoplanet.eu
 - License: Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)
 - Disclaimer: Users should make their own judgment on the reliability of individual entries according to their readme.
-- Data modified by the users: cleaned thus far.
+- Data modified by the users: cleaned, integrated, and used for visualization.
 - DOI / Reference: (https://doi.org/10.1051/0004-6361/201116713)
 
 ## Citation:
